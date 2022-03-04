@@ -11,6 +11,12 @@ namespace Demo.Application.Services
         {
             _userRepository = userRepository;
         }
+
+        public User GetUserById(int id)
+        {
+            return _userRepository.GetUserById(id);
+        }
+
         public List<User> GetUsers()
         {
             return _userRepository.GetUsers();
